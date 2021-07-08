@@ -1,3 +1,5 @@
 # MinusChat
-Yes
-Test Push#1
+## Developers:
+	Backend: GyroTwist
+	Frontend: Zirix
+	Frontend: jurapura13
