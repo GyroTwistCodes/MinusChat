@@ -1,0 +1,115 @@
+// variables
+
+// background color used for the background
+$colorBackgroundMain: rgb(48, 51, 58);
+// background color used for the navbar 
+$colorBackgroundNav: rgb(61, 91, 125);
+// default font family
+$defaultFontFamily: 'Roboto', sans-serif;
+// color used in the nav bar (for elements)
+$defaultNavBarColor: rgb(240, 240, 240);
+// primary button color
+$defaultButtonColor: rgb(0, 202, 179);
+$defaultButtonColorHover: rgb(5, 212, 188);
+
+
+// code
+
+body, html {
+    background-color: $colorBackgroundMain;
+    font-family: $defaultFontFamily;
+    height: 100%;
+    width: 100%;
+}
+
+// all element selector
+* {
+    margin: 0;
+    padding: 0;
+}
+// navbar
+.nav-container {
+    background-color: $colorBackgroundNav;
+    color: $defaultNavBarColor;
+    height: 8vh;
+    width: 100%;
+}
+.logo-header {
+    color: rgb(240, 240, 240);
+    position: absolute;
+    img {
+        padding-left: 5vh;
+        padding-top: 1.3vh;
+        height: 50px;
+        width: 50px;
+    }
+    h2 {
+        position: absolute;
+        top: 0;
+        padding-top: 2.5vh;
+        padding-left: 15vh;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+    }
+}
+/*#image-content {
+    padding-top: 20vh;
+    padding-left: 140vh;
+    height: 300px;
+    width: 300px;
+}*/
+ul {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+  li {
+    list-style-type:none;
+    float:right;
+    margin-left: 50px;
+    padding-right: 5vh;
+    padding-top: 3vh;
+  }  
+}
+
+// text field (text below navbar filling up the contents on the page)
+.text-field-container {
+    color: white;
+    .title-container {
+        font-size: 60px;
+        padding-top: 20vh;
+        padding-left: 35vh;
+        h1 {
+            font-weight: 600;
+            span {
+                color: rgb(0, 202, 179);
+            }
+        }
+    }
+    .description-container {
+        font-weight: 300;
+        width: 80vh;
+        font-size: 20px;
+        padding-top: 10vh;
+        padding-left: 35vh;
+    }
+    .button-container {
+        padding-top: 5vh;
+        padding-left: 35vh;
+        button {
+            color: rgb(0, 0, 0);
+            background-color: $defaultButtonColor;
+            /*background: linear-gradient(90deg,rgb(0, 184, 162) 0%, rgb(0, 216, 191) 100%);*/
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            transition: 0.15s ease-in-out;
+            &:hover {
+                background-color: $defaultButtonColorHover;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+@import '_nav.scss';
